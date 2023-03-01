@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body {
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+}
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: hsla(0,0%,100%,.98);
+}
+.section__inner {
+    zoom: 1;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-header h1 {
+    margin: 2px 0 0;
+    line-height: 68px;
+    display: inline-block;
+    position: relative;
+}
+.logo-docplanner {
+    width: 268px;
+    height: 33px;
+}
+.section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.introduction {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+.introduction p {
+    line-height: 1.6;
+    color: #747474;
+}
+.section1 h1 {
+    color: #00b39b;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.patients {
+    background-color: #00ccb1;
+}
+.doctors {
+    background-color: #3d83df;
+}
+.clinics {
+    background-color: #1b2734;
+}
+.box {
+    height: 300px;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box p {
+    font-size: 20px;
+}
+select {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+option {
+    color: black;
+}
+.section2 {
+    width: 60%;
+    margin: auto;
+}
+.section1 {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.section3 {
+    background-color: #d9f6f6;
+    height: 550px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.plateform {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+.stats h1 {
+    color: #00b39b;
+    font-weight: 100;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.stats p {
+    color: #747474;
+}
+.logo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.card{
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    text-align: center;
+    padding: 10px;
+}
+.card h1{
+    color: #00b39b;
+    font-weight: 100;
+}
+.card p{
+    color: #747474;
+}
+.translate{
+    transform: translateY(30px);
+}
+@media (max-width:500px) {
+    .introduction {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
+    .section1 h1 {
+        text-align: center;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .section2 {
+        width: 100%;
+    }
+}
